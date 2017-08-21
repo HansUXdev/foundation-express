@@ -93,7 +93,6 @@ app.set("view engine", "handlebars");
 exec('gulp build', function (err, stdout, stderr) {
   console.log(stdout);
   console.log(stderr);
-  cb(err);
 });
 
 
