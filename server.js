@@ -90,6 +90,13 @@ app.set("view engine", "handlebars");
 	require("./controllers/home.js")(app, menu);
 	require("./controllers/admin.js")(app);
 
+exec('gulp build', function (err, stdout, stderr) {
+  console.log(stdout);
+  console.log(stderr);
+  cb(err);
+});
+
+
 app.listen(port,function(){
 	console.log("App listening on PORT: "+port)
 })
